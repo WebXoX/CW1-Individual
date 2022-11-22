@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+#content{
+    position: relative;
+    left:  150px;    
+    top: -120px;
+}
+body{
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+    height: auto;
+    min-height: 1300px;
+    /* min-width: 1500px; */
+}
+
+.nav{
+    display: flex;
+    background-image: url("./image/grif.png");
+    background-position: center center;
+    background-size: cover;
+
+    padding:20px ;
+    border-bottom:solid beige 0.9px ;
+    min-width: 1460px;
+    height: 80px;
+}
+.logo{
+    position: relative;
+    right: 10px;
+    top: -20px;
+    border-bottom-right-radius:500% ;
+    border-bottom-left-radius:500% ;
+    width: 140px;
+    height: 190px;
+    background-color: rgb(240, 55, 60);
+}
+.logoH{
+    position: relative;
+    left: 3px;
+    top: 50px;
+}
+.logoH:hover{
+    position: relative;
+    left: -6px;
+    height: 110px;
+}
+.Courses{
+    position: relative;
+    top: 20px;
+    left: 140px;
+    font-size: 20px;
+    color: white;
+}
+.Courses>h1:hover{
+    border-bottom: solid 2px palevioletred;
+}
+.search{
+    position: absolute;
+    top: 150px;
+    padding-left: 500px;
+    padding-right: 479px;
+   
+}
+#searchS{
+    height: 30PX;
+    width: 500PX;
+    font-size: 20px;
+    text-align: center;
+    border-radius:10px ; 
+    /* border-radius:10px ; */
+    /* border-right: none; */
+}
+.searchB{
+    position: absolute;
+    top: -1px;
+    /* right: 5px; */
+    width: 30PX;
+    height: 38PX;
+    /* border: none;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ; */
+}
+.checkOut{
+    position: relative;
+    top: 40px;
+    left: 900px;
+}
+#cart{
+    font-size:30px ;
+    color:wheat;
+}
+.checkB{
+    height: 30px;
+    width: 130PX;
+    /* border-radius: 20PX; */
+    border: none;
+    background-color: transparent;
+}
+.productss{
+   padding: 100px;
+   height: 500px;
+   /* display: flex; */
+    display: grid;
+    /* justify-self: center; */
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-gap:50px ;
+    
+}
+
+/* https://fontawesome.com/icons/broom-ball?s=thin&f=classic */
