@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="products.js"></script>    
     <title>MATH</title>
 </head>
@@ -61,9 +61,9 @@
                         <p>space: {{product.quantity}}</p>
                         <!-- <input type="button" value="add" @click='addItem' v-show='canAdd(product)'> -->
                         <div>
-                            <span v-for="n in product.rating"><i class="fa-regular fa-star"></i></span>
+                            <!-- <span v-for="n in product.rating"><i class="fa-regular fa-star"></i></span>
                         <span v-for="n in 5-product.rating"><i class="fa-solid fa-star"></i></span>
-     
+      -->
                         </div>
                        
                         <button id="Mbutton" @click='addItem(product)' v-bind:disabled="!canAdd(product)">Add</button>
