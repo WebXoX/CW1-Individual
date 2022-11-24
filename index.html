@@ -111,18 +111,18 @@
                         <p id="fName">
                             <strong>First Name:</strong>
                             <!-- linking feilds to data-->
-                            <input  v-model.trim="order.firstName"/>
+                            <input type="letters" v-model.trim="order.firstName"/>
                         </p>
                         <p id="lName">
                             <strong>Last Name:</strong>
                             <!-- linking feilds to data-->
-                            <input  v-model.trim="order.lastName"/>
+                            <input type="letters" v-model.trim="order.lastName"/>
                         </p>
                         <p id="number">
                             <strong>Phone Number:</strong> 
                             <input   type="number" maxlength="10" v-model="order.number"/>
                         </p>
-                        <button id="submitB" v-on:click="submitForm" v-bind:disabled="!cartLength" >Place Order</button>
+                        <button id="submitB" @click="submitForm" v-bind:disabled="!canForm" >Place Order</button>
                     </div>
 
                 </div>
@@ -158,6 +158,7 @@
                 firstName: " ",
                 lastName:' ',
                 number:'',
+                show:false
             },
             products:lessons,
             cart: []
@@ -177,11 +178,7 @@
             },
             /*Method to submit the form*/ 
             submitForm(){
-                if (this.order.firstName && this.order.lastName && this.order.number.length ===10)
-                    alert('Order submitted!');
-                else
-                    alert('Enter correct information!!');
-
+                alert("Order placed!!")
             },
             /*Method to check if it can be added to cart*/ 
             canAdd(product){
@@ -317,7 +314,16 @@
             /*returns length of cart*/ 
             cartLength: function() {
                 return this.cart.length || '';
-            }
+            },
+            canForm(){
+                var letters = /^[A-Za-z]+$/;
+                if (this.order.firstName.match(letters) )
+                    if( this.order.lastName.match(letters)) 
+                        if( this.order.number.length ===10)
+                             return this.order.show=true;
+                else
+                        return this.order.show=false;
+            },
         }
     });
 </script>
