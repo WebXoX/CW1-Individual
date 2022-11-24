@@ -58,7 +58,7 @@
                     <div id="content"> 
                         <p >Subject: <b>{{product.title}}</b></p>
                         <p> City: <b>{{product.location}}</b></p>
-                        <p>Price: <b>{{product.price}}</b></p>
+                        <p>Price: <b>${{product.price}}</b></p>
                         <p>Space: <b>{{product.quantity}}</b></p>
                         <!-- rating made using v-for -->
                         <div>
@@ -94,7 +94,7 @@
                             <div id="content">
                                 <p >Subject: <b>{{productFinder(items).title}}</b></p>
                                 <p> City: <b>{{productFinder(items).location}}</b></p>
-                                <p>Price: <b>{{productFinder(items).price}}</b></p>
+                                <p>Price: <b>${{productFinder(items).price}}</b></p>
                                 <p>amount: <b>{{cartCounting(items)}}</b></p>
                                 <div>
                                     <span v-for="n in productFinder(items).rating"><i class="fa-solid fa-star"></i></span>
