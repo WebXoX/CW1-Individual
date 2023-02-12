@@ -26,6 +26,7 @@ body{
     background-size: cover;
     padding:20px ;
     border-bottom:solid beige 0.9px ;
+    box-shadow: 0px 0px 10px rgb(228, 105, 105);
     min-width: 1460px;
     height: 80px;
 }
@@ -47,7 +48,12 @@ body{
 }
 .logoH:hover{
     position: relative;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(10px 10px 0 black) 
+    drop-shadow(-1px -1px 0 black);
     left: -6px;
+    top: 40px;
     height: 110px;
 }
 .Courses{
@@ -58,8 +64,12 @@ body{
     color: white;
 }
 .Courses>h1:hover{
-    border-bottom: solid 2px palevioletred;
     cursor: pointer;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(10px 10px 0 black) 
+    drop-shadow(-1px -1px 0 black);
+    /* border-bottom: solid 2px palevioletred; */
 }
 .checkOut{
     position: relative;
@@ -104,6 +114,10 @@ body{
 }
 .checkB:hover{
    cursor: pointer;
+   -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(10px 10px 0 black) 
+    drop-shadow(-1px -1px 0 black);
 }
 .checkB:disabled{
     cursor: context-menu;
@@ -135,6 +149,10 @@ body{
     position: relative;
     top: 40px;
     border: 1px solid #ddd;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(8px 10px 0 black) 
+    drop-shadow(-1px -1px 0 black);
     background-color: rgb(245, 245, 245);
     border-radius: 40px;
     height: 200px;
@@ -155,6 +173,10 @@ figure>img{
     position: relative;
     top: 10px;
     border: 1px solid #ddd;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(8px 10px 0 black) 
+    drop-shadow(-1px -1px 0 black);
     background-color: rgb(245, 245, 245);
     border-radius: 40px;
     height: 200px;
@@ -168,6 +190,10 @@ figure>img{
     width: 80px;
     height: 23px;
     border-radius: 5px;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 5px 0 black) 
+    drop-shadow(-1px -1px 0 black);
 }
 #rButton{
     color: #ffff;
@@ -176,6 +202,10 @@ figure>img{
     width: 80px;
     height: 23px;
     border-radius: 5px;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 5px 0 black) 
+    drop-shadow(-1px -1px 0 black);
 }
 #Mbutton:disabled{
     color: rgb(158, 18, 18) ;
@@ -208,6 +238,10 @@ figure>img{
     background-color: #5cb85c;
     border-color: #5cb85c; 
     border-radius: 5px;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 5px 0 black) 
+    drop-shadow(-1px -1px 0 black);
 }
 /* empty cart css */
 .empty{
